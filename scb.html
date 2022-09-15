@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png"
+            href="data:image/webp;base64,UklGRlQFAABXRUJQVlA4IEgFAAAwHQCdASqCAIIAPpFGnUqlo6KhqFPZMLASCWRu3V/FcL8l0zPy39A9Fmm/1T8P+uDnDjzepvuXOI8wD9Jf1e/w/YA8wHnM/4D1Ff8L1CP9v1D/o19KX+3PB/8CB2RyJXYfmfKuRqXjjW74bV761hk/myeVYGHeV7blMCIcgXEIi90psgqbueT6kxDp2dP/i2SVzRTLlB3rUCRZlvopHEblC+LHGaVC7ua7ljvUTl6WvWOSkU1IHEnfqUYEZ7QMejb9U256KA47zmHX0z3vaLx9ct6mxe6L9neRams4fN90HE0Bq2ZZm66KSadm3/lk7PO9YAD++raAA866xHHIj4mUBahFkbUNEBNx3djUjB6ERfeLBx9wrYgnwT4H29hN7Rk8AG47rBERzBTTILOKGZdwURIEyDy/qPAkkHnvqGr1tpDdqDx/9/HwrYTKE6rK2Avj/9n4F7TKlR6y3Z9WOytvJpL1JK1AkoYHJnIwon/2/WR6toh2ZtALvK6IkuJD/4Rq4d0RL3b5xnPIzNL7gEmvKvklO0amUG35CITHqzJm/mG06x0p427ICED7rusCAs20j9xivMTorSbzAqAz/jFWP+i1M6rODPtXQvEzNVDBzn9JTmNNNid3n3k5YmdInNUtkw9tGzkXN2fJfSvPBzR/ul2WSpZ8/pt9DP19MxpS+42E3zuxb2tiQRrxE/uEWI13V9RCDOzaj0b2I5W3LgWuruwFeo2KFCljcPiAWzoY1S0nhv0RN+KfHp3uheesJpxqYbjLT22YhbEGOlaD6TMXn5/09CUobsln2ri/eO4BmdYo24fsigPqkQddHcbql96waWCzyCxX2jMx7a22ZeCIms643ACGZ6qFcRCtWSLAqV8CBRgUotkhXJFMDxRvZm4jJJqqN2+r9Bfqtg6nSj0XIiqmLFioES/WRouPcnxsQqmw24kPHdt89PqJ6zc+eH1UIa6r76R8Uq8U6a/jN8+r3xjfpHDORkjCvz84Xm3A/jcsjDWbSvyeSDI40nND7JOkytypgP/t8mW6yS7+TUBzuZJ/4rfty5ePMS+XCgQQP8NEgC3ZBAOZHjAvhp4pkKt5IGDm/4n17c8CUduZxZoJrt024I0KwK8+mm4ivQ1cll/jLInE9SPlE5MhBKisEGDNGjvDNiKBsBjy9t0xLBZAlh7MYyw22nK0eEky+5drxsx77tlY5CXAYNGjzCjlvvFX20+K8Y3O31MtpIE1eYVk6tPUh+YZhtYtdUSK1oWDcBAs5GuJ7MYTxvlEEXcs3R3ySek8dFB2D+jgpTadvVRzg7BkIX2knjAKWiLpdpTXHZcForqK7eoSOmGWc1u3ix5N0Awhwfi6iuyTGc89wo+7pYOMv6yP/Q4zZjDkT7VntpXdtzD46mchqFEj98GNAzwW6BYcl+KxBbc2ClvVt9Z7WNTMnGn75+neIq6Y50ScLfq6/mr4iCwf4kuZsRwVQmoWvU0MCeb3WZcvlh9JYEpHilIn6uU3e8QGIxkspS+OkHUXtUmiT3GaAFGIXxzm6BurmWDdXRMyq3TXZsVD1wIxeGq7iyDtY5/e2DH4MW5OZ84+AwtfdarWI3Bm90J3N49vz6+3+Yan+R1ML87RjZccLafcmGDyCgtp9JxzSz9y3OvubdCIfnNGWvETmtx9fo3buFbQuEjMSHl5OobrngDtt0Mq8TCIiFjukSzIxI+5IH3F9ULjL7nqXRrYW+17WN/WHYBBCLtvM6MvR65gt9crCrr0Yie7RS5vbWi3gma4B+ACEzPivzxgo+IYxrk+wNZWoxYAAAAAAA==" />
+        <!-- faivcon -->
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!--  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+            rel="stylesheet">
+        <title>Standard Chartered India | Personal, Business & Private Banking</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Ubuntu+Mono:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="scb.css">
+
+        <!--  -->
+        <!--  -->
+
+        <style>
+            html,
+            body {
+                /* font-family: "Bitter", serif; */
+                /* font-family: "Noto Sans", sans-serif; */
+                /* font-family: "Libre Baskerville", serif; */
+                font-family: Arial, Helvetica, sans-serif;
+                /* background-color: #fefae0; */
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            .home-b {
+                font-weight: 700;
+            }
+
+            .lead {
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+
+            .head-title {
+                color: antiquewhite;
+                background-color: #a52a2a;
+                font-family: "IBM Plex Mono", monospace;
+                font-weight: 500;
+                margin: auto;
+                text-align: center;
+                border-left: 4px solid gray;
+                border-right: 4px solid gray;
+                border-radius: 0 0 0.5em 0.5em;
+            }
+
+            /* Nvaigation bar */
+            .navbar {
+                padding: 0.5em 0;
+                background-color: aliceblue;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                position: sticky !important;
+            }
+
+            .nav-item {
+                margin: 0 2em;
+                color: #a52a2a;
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                /* display: flex !important; */
+                justify-content: space-around;
+                flex-basis: auto;
+            }
+
+            /* Main Content */
+
+            /* .Main-content {
+  background-color: white;
+} */
+
+            .navg .row {
+                font-size: 0.9rem;
+            }
+
+            dt a {
+                text-decoration: none;
+                color: #a52a2a;
+            }
+
+            .small-headers {
+                font-weight: 700;
+            }
+
+            .padc {
+                padding: 0.75em 1em;
+            }
+
+            /* Footer */
+            footer {
+                margin-top: auto;
+            }
+
+            .foot {
+                background-color: #573b38;
+                justify-content: space-evenly;
+                flex-basis: auto;
+            }
+
+            .foot .row .col-3 a {
+                text-decoration: none;
+                color: #bba9a8;
+            }
+
+            .foot .row .col-3 {
+                text-align: center;
+            }
+
+            /* Demo */
+            .demoform {
+                padding: 2rem;
+                border-radius: 2em;
+                background-color: #bba9a869;
+                width: 90%;
+                margin: auto;
+            }
+
+            .demoform input[type="submit"] {
+                background-color: #a52a2a;
+                color: antiquewhite;
+                border: none;
+            }
+
+            .demoform input[type="submit"]:hover {
+                background-color: #573b38;
+                color: #bba9a8;
+                border: none;
+            }
+
+            .form-label {
+                font-size: 1.25rem;
+            }
+
+            .demopred {
+                text-align: center;
+            }
+
+            /* Contact */
+            .contactd {
+                text-align: center;
+                margin: auto 0;
+            }
+
+            .contactd a {
+                text-decoration: none;
+                color: black;
+                margin: 0;
+            }
+
+            .material-symbols-outlined {
+                margin: 0;
+            }
+
+            .toc {
+                width: 60%;
+                border-bottom: 1px solid rgba(211, 211, 211, 0.638);
+                padding-bottom: 0.2em;
+            }
+
+            .toc-item a {
+                text-decoration: none;
+                color: #573b38;
+            }
+
+            .figc {
+                color: #573b38;
+                font-style: italic;
+                font-weight: 700;
+                font-size: 0.95rem;
+                margin: auto 0;
+            }
+
+            .scroll-top {
+                width: 75px;
+                height: 75px;
+                position: fixed;
+                bottom: 25px;
+                left: 20px;
+                display: none;
+            }
+
+            .scroll-top i {
+                display: inline-block;
+                color: #fff;
+            }
+
+            ::-webkit-scrollbar {
+                -webkit-appearance: none;
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                border-radius: 4px;
+                background-color: rgba(0, 0, 0, 0.5);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+
+            /* Media Queries */
+            @media (min-width: 300px) {
+                .head-title {
+                    font-size: 1rem;
+                }
+
+                .demoform {
+                    width: 90%;
+                }
+            }
+
+            @media (min-width: 600px) {
+                .head-title {
+                    font-size: 1.25rem;
+                }
+
+                .demoform {
+                    width: 80%;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .head-title {
+                    font-size: 2.5rem;
+                }
+
+                .demoform {
+                    width: 70%;
+                }
+            }
+        </style>
+
+
+        <!--  -->
+        <!--  -->
+
+    </head>
+
+
+    <body>
+        <!-- <header> -->
+
+
+        <!-- </header> -->
+
+        <!-- Main -->
+
+
+
+        <header id="body-header">
+
+            <nav class="navbar navbar-expand-lg navbar-toggler sticky-top">
+
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav center-text">
+                            <img class="nav-logo-home"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sV8ew9HCY8TzVbnqT4d6UwwtWQ4-c5CtEg&usqp=CAU">
+                            <a class="nav-item nav-link active" href="products">You're in India</a>
+                            <a class="nav-item nav-link active" href="products">Our Products</a>
+                            <a class="nav-item nav-link active" href="promotions">Promotions</a>
+                            <a class="nav-item nav-link active" href="services">Services</a>
+                            <a class="nav-item nav-link active" href="contact">Help</a>
+                            <button class="nav-login">LOGIN</button>
+
+                            <img class="nav-logo"
+                                src="https://www.sc.com/en/content/themes/standardchartered/assets/src/images/standard-chartered.svg">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="im-text">
+                <h3 id="full-name" style="font-weight: bolder;">
+                    Enjoy cashback up to INR 18,000<sup>*</sup> with Smart Credit Card
+                </h3>
+                Avail 2%<sup>*</sup> cashback on all online spends and 1%<sup>*</sup> cashback on other spends.<br>
+                <sup>*</sup>T&C apply.
+                <br>
+                <br>
+                <button class="btn-apply">APPLY NOW</button>
+
+            </div>
+
+
+        </header>
+
+
+        <main>
+            <section class="tabs">
+                <div class="container">
+
+                    <div class="contactd">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-2 card-small">
+                                <img class="tabs-icons"
+                                    src="https://www.dlf.pt/dfpng/middlepng/17-175470_blue-credit-card-icon-hd-png-download.png">
+                                <h4 class="tabs-title">Accounts & Deposit</h4>
+                            </div>
+                            <div class="col-md-2 card-small">
+                                <img class="tabs-icons"
+                                    src="https://www.dlf.pt/dfpng/middlepng/17-175470_blue-credit-card-icon-hd-png-download.png">
+                                <h4 class="tabs-title">Mortgage</h4>
+                            </div>
+                            <div class="col-md-2 card-small">
+                                <img class="tabs-icons"
+                                    src="https://www.dlf.pt/dfpng/middlepng/17-175470_blue-credit-card-icon-hd-png-download.png">
+                                <h4 class="tabs-title">Credit Card</h4>
+                            </div>
+                            <div class="col-md-2 card-small">
+                                <img class="tabs-icons"
+                                    src="https://www.dlf.pt/dfpng/middlepng/17-175470_blue-credit-card-icon-hd-png-download.png">
+                                <h4 class="tabs-title">Personal Loans</h4>
+                            </div>
+                            <div class="col-md-2 card-small">
+                                <img class="tabs-icons"
+                                    src="https://www.dlf.pt/dfpng/middlepng/17-175470_blue-credit-card-icon-hd-png-download.png">
+                                <h4 class="tabs-title">Investments</h4>
+                            </div>
+                            <div class="col-md-2 lastc card-small">
+                                <img class="tabs-icons"
+                                    src="https://www.dlf.pt/dfpng/middlepng/17-175470_blue-credit-card-icon-hd-png-download.png">
+                                <h4 class="tabs-title">Insurance</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <section class="whats-new">
+                <h2 style="text-align: left;">What's New</h2>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-2 card-main">
+                            <div class="card">
+                                <img src="
+                        https://av.sc.com/in/content/images/in-sc-sustainability-net-zero-pintile-400x400-1.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of
+                                        the card's content.</p>
+                                    <a href="#" class="btn">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="
+                                https://av.sc.com/in/content/images/in-podcast-hp-pintile.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of
+                                        the card's content.</p>
+                                    <a href="#" class="btn">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="
+                                https://av.sc.com/in/content/images/in-nri-hp-pintile.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of
+                                        the card's content.</p>
+                                    <a href="#" class="btn">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="
+                                https://av.sc.com/in/content/images/in-second-home-worth-the-investment-tile.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of
+                                        the card's content.</p>
+                                    <a href="#" class="btn">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="
+                                https://av.sc.com/in/content/images/in-digital_banner-sc-mobile-app.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of
+                                        the card's content.</p>
+                                    <a href="#" class="btn">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <img src="
+                                https://av.sc.com/in/content/images/in-sc-invest-cafe-hp-pintile.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of
+                                        the card's content.</p>
+                                    <a href="#" class="btn">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
+
+        </main>
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+
+</html>

@@ -1,0 +1,351 @@
+html,
+body {
+  /* font-family: "Bitter", serif; */
+  /* font-family: "Noto Sans", sans-serif; */
+  /* font-family: "Libre Baskerville", serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #fefae0; */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+
+.navbar {
+  background-color: white;
+  margin: 0;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-logo-home {
+  width: 3%;
+  height: 3%;
+}
+
+.nav-logo {
+  width: 8%;
+  height: 4%;
+}
+
+.nav-login {
+  /* padding: 0 4em 0 4em; */
+  margin: 0 4em 0 4em;
+  font-size: 11px;
+  justify-content: center;
+  width: 128px;
+  height: 32px;
+  background-color: #008738;
+  color: white;
+  border: none;
+}
+
+/* Header Background Image
+#body-header {
+  height: 85vh;
+  background-image: url("https://av.sc.com/in/content/images/in-hp-smart-card-masthead-banner.jpg");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* opacity: 0.65; */
+  background-attachment: fixed;
+  margin: 0;
+} */
+
+/* Name */
+#img-txt {
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 4.5% auto;
+  letter-spacing: 0.2rem;
+}
+
+
+/* nav {
+    margin: auto;
+    margin: auto 25%;
+  } */
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Social Buttons */
+.social li a img {
+  display: inline-block;
+  width: 1.5%;
+  height: 1.5%;
+  padding: 0.5%;
+  margin: 0.5%;
+  transition: border-radius 0.1s, box-shadow 0.25s;
+}
+
+.social li {
+  display: inline;
+  /* padding: auto;
+      margin: auto; */
+}
+
+.social li a img:hover {
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 4px rgba(128, 128, 128, 0.15);
+  /* transform: translateY(-2px); */
+}
+
+/* Header Background Image */
+#body-header {
+    width: auto;
+  height: auto;
+  background-image: url("https://av.sc.com/in/content/images/in-hp-smart-card-masthead-banner.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* opacity: 0.65; */
+  background-attachment: scroll;
+  margin-bottom: 2rem;
+}
+
+/* Name */
+
+
+/* About Section */
+#about {
+  height: auto;
+  width: 100%;
+}
+
+#profile {
+  height: 12rem;
+  width: 12rem;
+  position: relative;
+  margin: 0 auto;
+  margin-top: -17vh;
+}
+
+#profile img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#about-desc {
+  width: 75%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+
+.section_heading {
+  width: auto;
+  padding: 1em 0;
+  margin: 0.5em auto;
+  font-weight: 400;
+}
+
+.section_heading span {
+  font-size: 2rem;
+  width: auto;
+  color: #2857a4;
+  display: inline-block;
+  font-weight: 400;
+}
+
+#skills {
+  display: flex;
+}
+
+#skillbars {
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+#skillbars div {
+  width: 25%;
+  height: 2rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin: 0 0.5em 1.5em;
+  border-radius: 2em;
+  background-color: rgb(202, 199, 199);
+}
+
+.skillname {
+  display: inline-block;
+  height: inherit;
+  box-sizing: border-box;
+  padding: 0.8em 0 0.8em 0.85em;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 2em 0 0 2em;
+  background-color: aquamarine;
+}
+
+#Py85 {
+  width: 85%;
+}
+
+#ML80 {
+  width: 80%;
+}
+
+#html80 {
+  width: 80%;
+}
+
+#css70 {
+  width: 70%;
+}
+
+#js50 {
+  width: 50%;
+}
+
+#sql40 {
+  width: 40%;
+}
+
+/* Contact Section */
+
+#contact {
+  background: linear-gradient(to top right, #2857a4, #403066);
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.section_heading_contact span {
+  color: whitesmoke;
+  font-size: 2rem;
+  width: auto;
+}
+
+.contact-main {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.contact-left,
+.contact-right {
+  padding: 2%;
+  width: 25%;
+  flex: 1 1;
+}
+
+h3 {
+  margin: 0;
+}
+
+#cform input,
+#cform textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  font-size: 1rem;
+  padding: 1%;
+  margin-bottom: 4%;
+}
+
+#address {
+  line-height: 1.5em;
+}
+
+.contact-left a {
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  padding: 1.5% 1%;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: 4em;
+  border: 2px solid whitesmoke;
+}
+
+.contact-left a:hover {
+  background: white;
+  color: #13386fe0;
+}
+
+
+.im-text{
+    color: white;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.im-text #full-name{
+    color: white;
+    text-align: left;
+    justify-content: left;
+    margin-left: 2rem;
+    font-size: 3rem;
+    margin-left: -0.5rem;
+    margin-bottom: 2rem;
+    width: 40%;
+    letter-spacing: 0.2rem;
+}
+
+.btn-apply{
+    padding: 1em 3em 1em 3em;
+    border-radius: 2em;
+    background-color: #008738;
+    color: white;
+    border: none;
+    /* margin-bottom: rem; */
+}
+
+.tabs-icons{
+    width: 45%;
+    height: 45%;
+    margin: 1em;
+}
+
+.tabs-title{
+  font-size: 1.15em;
+}
+
+.card-small{
+    border-right: 1px solid lightgray;
+}
+
+.lastc{
+    border: none;
+}
+
+.card-body{
+  border: none;
+}
+
+.card{
+  border:  ;
+  border-radius: none;
+}
+
+.center-text{
+  /* font-size: 1rem; */
+  display: flex;
+  justify-content: space-between;
+}
